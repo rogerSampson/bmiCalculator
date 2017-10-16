@@ -1,0 +1,119 @@
+
+h1 {
+  color: #fff;
+  font-size: 28px;
+}
+
+button {outline: none;}
+
+.AppContainer{
+  color: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 25px;
+
+}
+
+.InnerContainer{
+  text-align: center;
+}
+
+.form {
+    padding: 10px;
+    font-size: 24px;
+}
+
+.form div {
+    padding: 10px 20px;
+}
+
+.form button {
+    background: #067cb2;
+    border: 0;
+    border-radius: 25px;
+    padding: 5px 20px;
+    width: 200px;
+    font-size: 16pt;
+    color: white;
+    margin-left: 15px;
+    cursor:pointer;
+}
+
+.BMIResult {
+      font-size: 24px;
+    margin-top: 20px;
+}
+
+.BMIResult h3{
+    color: #000;
+    font-size: 16pt;
+}
+
+.currency-result{
+    font-size: 14pt;
+}
+
+.bmiCircle{
+    border-radius: 50%;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.resultU{
+      background-color: #acd9d4;
+    border: 1px solid #acd9d4;
+}
+
+.resultH{
+      background-color: #9de657;
+    border: 1px solid #9de657;
+}
+
+.resultO{
+      background-color: #fffda6;
+    border: 1px solid #fffda6;
+}
+
+.resultOb{
+      background-color: red;
+    border: 1px solid red;
+}
+
+.bmiResult {
+    color: #fff;
+    font-size: 18pt;
+    text-decoration: underline;
+}
+
+.bmiInfo{
+  font-size: 14pt;
+  margin: 10px;
+}
+
+.error{
+    color: #a94442;
+}
+
+
+.form-control {
+    border: none;
+    border-radius: 20px;
+    padding: 5px 8px;
+    color: #333;
+    box-shadow: inset 0 2px 0 rgba(0, 0, 0, .2), 0 0 4px rgba(0, 0, 0, 0.1);
+}
+.form-control:focus {
+    outline: none;
+    box-shadow: inset 0 2px 0 rgba(0, 0, 0, .2), 0 0 4px rgba(0, 0, 0, 0.1), 0 0 5px 1px #51CBEE;
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-right: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-right: 5px solid #a94442; /* red */
+}

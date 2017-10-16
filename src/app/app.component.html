@@ -1,0 +1,32 @@
+
+<div class="AppContainer">
+  <div class="InnerContainer">
+  <h1>
+    Welcome to {{title | uppercase}}
+  </h1>
+
+    <form #signupForm="ngForm" (ngSubmit)="onSubmit(signupForm)" class="form">
+
+            <div class="form-group">
+                <label for="Weight">Weight (KG)</label>
+                <input type="text" class="form-control" id="Weight" minlength="2" maxlength="3" name="Weight" required (ngModelChange)="updateBMI($event)" ngModel placeholder="eg. 75" autofocus>
+            </div>
+             <div class="form-group">
+                <label for="Height">Height (CM)</label>
+                <input type="text" class="form-control" id="Height" minlength="2" maxlength="3" name="Height" required ngModel placeholder="eg. 165">
+            </div>
+
+            <button type="submit" class="btn btn-success">Get BMI</button> <span class="error">{{error}}</span>
+
+    </form>
+
+    <div class="BMIResult" *ngIf="BMIResult != null" >
+        <h2>BMI Result</h2>
+        <div class="bmiCircle" [className]="resultClass"><h3>  {{BMIResult | number:'1.1-1'}} </h3></div>
+       <div class="bmiResult" [ngStyle]="{'font-size':'27px'}">{{ResultTitle}}</div>
+        <div class="bmiInfo">{{ResultInfo}}</div>
+        <img src="/assets/bmi-categories_med.jpeg" />
+    </div>
+
+  </div>
+</div>
