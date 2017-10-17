@@ -1,6 +1,7 @@
 # bmiCalculator
 
 Using Angular 4, MVVM, Dependency Injection, 2 way databinding, Services, CSS3 & HTML5
+
 Bundling & minification of CSS & Jscript
 
 The core componets can be found under: src\app\
